@@ -42,6 +42,9 @@ https://trilogymp.com.
   - [classnames](https://github.com/JedWatson/classnames)
   - [Wrangler](https://developers.cloudflare.com/workers/cli-wrangler) for
     Cloudflare Workers
+- Analytics
+  - Cloudflare's free, privacy-first
+    [Web Analytics](https://developers.cloudflare.com/analytics/web-analytics)
 
 ## Setting up the project
 
