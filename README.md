@@ -4,11 +4,12 @@
 [![Discord](https://img.shields.io/discord/901115701551570954)](https://discord.com/invite/dVfXRBA2zx)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](.github/CODE_OF_CONDUCT.md)
 
-[Trilogy Multiplayer](https://trilogymp.com) (TMP) is a work in progress
-nonprofit open source software project for Rockstar Games' Grand Theft Auto: The
-Trilogy – The Definitive Edition with a primary goal of adding multiplayer
-functionality with an easy scripting interface for players to create unique
-experiences together with their friends.
+**[Trilogy Multiplayer](https://trilogymp.com)** (TMP) is a work in progress
+nonprofit **open source** software project for Rockstar Games' Grand Theft Auto:
+The Trilogy – The Definitive Edition with a primary goal of adding
+**multiplayer** functionality with an easy **scripting** interface for you to
+create **unique experiences** to play **together** with your **friends** in all
+three of the genre-defining classics.
 
 This repository contains the source code of our project's website located at
 https://trilogymp.com.
@@ -76,7 +77,8 @@ be located in the default `out` directory.
 ## License
 
 Unless otherwise specified, all source code hosted on this repository is
-licensed under the MIT license. See the LICENSE file for more details.
+licensed under the MIT license. See the [LICENSE](LICENSE) file for more
+details.
 
 Trilogy Multiplayer is not affiliated with or endorsed by Rockstar Games,
 Take-Two Interactive or other rightsholders. Any trademarks used belong to their
