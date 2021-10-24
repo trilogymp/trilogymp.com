@@ -1,0 +1,40 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier",
+    "semistandard",
+    "next"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "comma-dangle": [1, "only-multiline"],
+    "no-warning-comments": [
+      "warn",
+      {
+        "terms": ["eslint-disable", "fixme", "hack", "todo"],
+        "location": "anywhere"
+      }
+    ],
+    "react/jsx-no-target-blank": [0],
+    "react/prop-types": [0],
+    "react/react-in-jsx-scope": [0],
+    "space-before-function-paren": [0]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
