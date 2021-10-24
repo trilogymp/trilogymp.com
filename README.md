@@ -83,3 +83,11 @@ details.
 Trilogy Multiplayer is not affiliated with or endorsed by Rockstar Games,
 Take-Two Interactive or other rightsholders. Any trademarks used belong to their
 respective owners.
+
+## Code of Conduct
+
+Our [Code of Conduct](.github/CODE_OF_CONDUCT.md) is adapted from the
+[Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct.html),
+version 2.1.
+
+By participating in this project you agree to abide by its terms.
