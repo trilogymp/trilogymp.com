@@ -80,10 +80,6 @@ Unless otherwise specified, all source code hosted on this repository is
 licensed under the MIT license. See the [LICENSE](LICENSE) file for more
 details.
 
-Trilogy Multiplayer is not affiliated with or endorsed by Rockstar Games,
-Take-Two Interactive or other rightsholders. Any trademarks used belong to their
-respective owners.
-
 ## Code of Conduct
 
 Our [Code of Conduct](.github/CODE_OF_CONDUCT.md) is adapted from the
@@ -91,3 +87,16 @@ Our [Code of Conduct](.github/CODE_OF_CONDUCT.md) is adapted from the
 version 2.1.
 
 By participating in this project you agree to abide by its terms.
+
+## Disclaimer
+
+Trilogy Multiplayer is not affiliated with or endorsed by Rockstar Games,
+Take-Two Interactive or other rightsholders.
+
+Rockstar Games, Grand Theft Auto, Grand Theft Auto: The Trilogy - The Definitive
+Edition, Grand Theft Auto III, Grand Theft Auto: Vice City, Grand Theft Auto:
+San Andreas and R\* logo are marks/logos/copyrights of Take-Two Interactive. Any
+trademarks used belong to their respective owners.
+
+A legitimate copy of Grand Theft Auto: The Trilogy - The Definitive Edition is
+required to be able to play multiplayer.
