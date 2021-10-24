@@ -1,0 +1,81 @@
+{
+  "name": "@trilogymp/website",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "homepage": "https://github.com/trilogymp/trilogymp.com",
+  "bugs": "https://github.com/trilogymp/trilogymp.com/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trilogymp/trilogymp.com.git"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "build": "next build",
+    "clean": "del-cli ./{dist,out} ./src/cfworker/worker",
+    "cleaninstall": "npm run clean && del-cli \"{node_modules,.eslintcache,.next}\" && npm install",
+    "dev": "next dev",
+    "lint:prettierbase": "prettier \"./**/*.js\"",
+    "lint:prettier:fix": "npm run lint:prettierbase -- --write",
+    "lint:prettier:check": "npm run lint:prettierbase -- --debug-check",
+    "lint:eslint": "eslint ./ --cache",
+    "lint:eslint:fix": "npm run lint:eslint -- --fix",
+    "lint:stylelint": "stylelint \"./**/*.{s,}css\"",
+    "lint:stylelint:fix": "npm run lint:stylelint -- --fix",
+    "lint": "npm-run-all lint:prettier:check lint:eslint lint:stylelint",
+    "lintfix": "npm-run-all lint:prettier:fix lint:eslint:fix lint:stylelint:fix",
+    "postinstall": "husky install",
+    "prepare": "husky install",
+    "start": "next start",
+    "test": "npm run lint",
+    "export": "next build && next export",
+    "publish-workers": "npm-run-all --parallel publish-workers:dev publish-workers:prod",
+    "publish-workers:dev": "wrangler publish",
+    "publish-workers:prod": "wrangler publish --env production",
+    "wrangler": "wrangler"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "next": "^11.1.2",
+    "next-seo": "^4.28.1",
+    "postcss": "^8.3.11",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-rtlcss": "^3.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-i18next": "^11.12.0",
+    "sass": "^1.43.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/eslint-parser": "^7.15.8",
+    "@cloudflare/wrangler": "^1.19.4",
+    "babel-loader": "^8.2.3",
+    "del": "^6.0.0",
+    "del-cli": "^4.0.1",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-semistandard": "^16.0.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.4",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.4.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-css-modules": "^2.2.0",
+    "stylelint-config-recommended-scss": "^4.3.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.21.0"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
+  }
+}

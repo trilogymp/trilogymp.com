@@ -1,0 +1,5 @@
+.github
+.husky
+.next
+out
+node_modules

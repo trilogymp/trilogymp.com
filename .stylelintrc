@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "stylelint-config-recommended-scss",
+    "stylelint-config-css-modules"
+  ],
+  "plugins": ["stylelint-order", "stylelint-scss"],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["value"]
+      }
+    ],
+    "comment-word-disallowed-list": [
+      ["fixme", "hack", "stylelint-disable", "todo"],
+      {
+        "severity": "warning"
+      }
+    ],
+    "no-descending-specificity": null,
+    "no-empty-source": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ]
+  }
+}
