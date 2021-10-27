@@ -31,9 +31,9 @@
     "start": "next start",
     "test": "npm run lint",
     "export": "next build && next export",
-    "publish-workers": "npm-run-all --parallel publish-workers:dev publish-workers:prod",
-    "publish-workers:dev": "wrangler publish",
-    "publish-workers:prod": "wrangler publish --env production",
+    "workers:publish": "npm-run-all --parallel workers:publish:dev workers:publish:prod",
+    "workers:publish:dev": "wrangler publish",
+    "workers:publish:prod": "wrangler publish --env production",
     "wrangler": "wrangler"
   },
   "dependencies": {

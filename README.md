@@ -69,7 +69,7 @@ build. A public preview link will be available on Cloudflare Pages dashboard.
 To publish a new worker build, use the
 [Wrangler CLI](https://developers.cloudflare.com/workers/cli-wrangler). First
 log in to your authorized Cloudflare account using `npm run wrangler login` and
-then use `npm run publish-workers` to publish the worker in all environments.
+then use `npm run workers:publish` to publish the worker in all environments.
 Use `npm run wrangler` to see all available commands.
 
 ## Exporting a static version
