@@ -17,6 +17,7 @@
     "clean": "del-cli ./{dist,out} ./src/cfworker/worker",
     "cleaninstall": "npm run clean && del-cli \"{node_modules,.eslintcache,.husky,.next}\" && npm install",
     "dev": "next dev",
+    "export": "next build && next export",
     "lint:prettierbase": "prettier \"./**/*.js\"",
     "lint:prettier:fix": "npm run lint:prettierbase -- --write",
     "lint:prettier:check": "npm run lint:prettierbase -- --debug-check",
@@ -31,16 +32,15 @@
     "postinstall:playwright": "playwright install",
     "prepare": "husky install",
     "start": "next start",
+    "storybook": "npm-run-all export storybook:start",
+    "storybook:start": "start-storybook -p 6006",
+    "storybook:build": "npm-run-all build build-storybook",
     "test": "npm-run-all lint test:playwright",
     "test:playwright": "playwright test src/tests",
-    "export": "next build && next export",
     "workers:publish": "npm-run-all --parallel workers:publish:dev workers:publish:prod",
     "workers:publish:dev": "wrangler publish",
     "workers:publish:prod": "wrangler publish --env production",
-    "wrangler": "wrangler",
-    "storybook": "npm-run-all export storybook:start",
-    "storybook:start": "start-storybook -p 6006",
-    "storybook:build": "npm-run-all build build-storybook"
+    "wrangler": "wrangler"
   },
   "dependencies": {
     "classnames": "^2.3.1",
