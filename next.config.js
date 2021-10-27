@@ -3,4 +3,5 @@ module.exports = {
     loader: 'custom',
   },
   reactStrictMode: true,
+  swcMinify: true,
 };
