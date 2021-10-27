@@ -6,6 +6,7 @@ module.exports = {
     '@storybook/addon-postcss',
     '@storybook/preset-scss',
     '@washingtonpost/storybook-addon-web-vitals',
+    'storybook-addon-designs',
   ],
   core: {
     builder: 'webpack5',
