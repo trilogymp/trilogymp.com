@@ -20,9 +20,9 @@ https://trilogymp.com.
   - Free CDN hosting from [Cloudflare Pages](https://pages.cloudflare.com/) with
     [Cloudflare Workers](https://workers.cloudflare.com/)
 - Gist
-  - [Node.js 14](https://nodejs.org/)
-  - [React 17](https://reactjs.org/)
-  - [Next.js 11](https://nextjs.org/)
+  - [Node.js 14](https://nodejs.medium.com/node-js-version-14-available-now-8170d384567e)
+  - [React 18](https://reactjs.org/blog/2021/06/08/the-plan-for-react-18.html)
+  - [Next.js 12](https://nextjs.org/blog/next-12)
   - CSS modules in [Sass (SCSS)](https://sass-lang.com/)
 - CI/CD
   - Cloudflare Pages GitHub integration
