@@ -15,7 +15,7 @@
   "scripts": {
     "build": "next build",
     "clean": "del-cli ./{dist,out} ./src/cfworker/worker",
-    "cleaninstall": "npm run clean && del-cli \"{node_modules,.eslintcache,.next}\" && npm install",
+    "cleaninstall": "npm run clean && del-cli \"{node_modules,.eslintcache,.husky,.next}\" && npm install",
     "dev": "next dev",
     "lint:prettierbase": "prettier \"./**/*.js\"",
     "lint:prettier:fix": "npm run lint:prettierbase -- --write",
