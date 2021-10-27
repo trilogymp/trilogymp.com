@@ -63,8 +63,8 @@ https://trilogymp.com.
 
 ## Publishing the page
 
-To publish a new page build, simply push changes to the `production` branch and
-the Cloudflare Pages GitHub integration will take care of the rest.
+To publish a new build, simply push changes to the `production` branch and the
+Cloudflare Pages GitHub integration will take care of the rest.
 
 Pushing to other branches, including the `main` branch, will result in a preview
 build. A public preview link will be available on Cloudflare Pages dashboard.
