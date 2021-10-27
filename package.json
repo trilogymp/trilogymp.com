@@ -37,7 +37,10 @@
     "workers:publish": "npm-run-all --parallel workers:publish:dev workers:publish:prod",
     "workers:publish:dev": "wrangler publish",
     "workers:publish:prod": "wrangler publish --env production",
-    "wrangler": "wrangler"
+    "wrangler": "wrangler",
+    "storybook": "npm-run-all export storybook:start",
+    "storybook:start": "start-storybook -p 6006",
+    "storybook:build": "npm-run-all build build-storybook"
   },
   "dependencies": {
     "classnames": "^2.3.1",
@@ -47,17 +50,28 @@
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
     "postcss-rtlcss": "^3.4.1",
+    "prop-types": "^15.7.2",
     "react": "alpha",
     "react-dom": "alpha",
-    "react-i18next": "^11.12.0",
-    "sass": "^1.43.4"
+    "react-i18next": "^11.12.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/eslint-parser": "^7.15.8",
     "@cloudflare/wrangler": "^1.19.4",
     "@playwright/test": "^1.16.2",
+    "@storybook/addon-a11y": "^6.3.12",
+    "@storybook/addon-actions": "^6.4.0-beta.21",
+    "@storybook/addon-essentials": "^6.4.0-beta.21",
+    "@storybook/addon-links": "^6.4.0-beta.21",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack5": "^6.4.0-beta.21",
+    "@storybook/manager-webpack5": "^6.4.0-beta.21",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.4.0-beta.21",
+    "@washingtonpost/storybook-addon-web-vitals": "^0.1.1",
     "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.0",
     "del": "^6.0.0",
     "del-cli": "^4.0.1",
     "eslint": "^7.32.0",
@@ -73,11 +87,15 @@
     "husky": "^7.0.4",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.4.1",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
     "stylelint": "^14.0.1",
     "stylelint-config-css-modules": "^2.3.0",
     "stylelint-config-recommended-scss": "^5.0.0",
     "stylelint-order": "^5.0.0",
-    "stylelint-scss": "^4.0.0"
+    "stylelint-scss": "^4.0.0",
+    "webpack": "^5.60.0"
   },
   "optionalDependencies": {
     "fsevents": "^2.3.2"

@@ -40,6 +40,7 @@ https://trilogymp.com.
   - [react-i18next](https://react.i18next.com/)
 - Design and development tools
   - [Figma](https://www.figma.com) for UI and UX design
+  - [Storybook](https://storybook.js.org) for isolated UI development
 - Code tools and utilities
   - [classnames](https://github.com/JedWatson/classnames)
   - [Wrangler](https://developers.cloudflare.com/workers/cli-wrangler) for
