@@ -39,3 +39,6 @@ worker
 
 # husky
 .husky
+
+# eslint
+.eslintcache
