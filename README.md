@@ -42,6 +42,8 @@ https://trilogymp.com.
   - [classnames](https://github.com/JedWatson/classnames)
   - [Wrangler](https://developers.cloudflare.com/workers/cli-wrangler) for
     Cloudflare Workers
+- Testing
+  - [Playwright](https://playwright.dev/) for end-to-end and integration testing
 - Analytics
   - Cloudflare's free, privacy-first
     [Web Analytics](https://developers.cloudflare.com/analytics/web-analytics)
