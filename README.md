@@ -38,7 +38,9 @@ https://trilogymp.com.
   - [postcss-rtlcss](https://github.com/elchininet/postcss-rtlcss) for automated
     RTL support
   - [react-i18next](https://react.i18next.com/)
-- Tools and utilities
+- Design and development tools
+  - [Figma](https://www.figma.com) for UI and UX design
+- Code tools and utilities
   - [classnames](https://github.com/JedWatson/classnames)
   - [Wrangler](https://developers.cloudflare.com/workers/cli-wrangler) for
     Cloudflare Workers
