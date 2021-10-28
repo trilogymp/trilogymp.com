@@ -37,8 +37,5 @@ yarn-error.log*
 dist
 worker
 
-# husky
-.husky
-
 # eslint
 .eslintcache
