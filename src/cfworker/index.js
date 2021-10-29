@@ -9,7 +9,7 @@ async function handleEvent(request) {
 
   newResponse.headers.set(
     'Content-Security-Policy',
-    "default-src 'none'; script-src 'self' https://static.cloudflareinsights.com/beacon.min.js; style-src 'self' 'unsafe-inline'; img-src 'self'; connect-src 'self' https://cloudflareinsights.com/cdn-cgi/rum; frame-ancestors 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests",
+    "default-src 'none'; script-src 'self' https://static.cloudflareinsights.com/beacon.min.js; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src https://fonts.gstatic.com/s/inter/; connect-src 'self' https://cloudflareinsights.com/cdn-cgi/rum; frame-ancestors 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests",
   );
   newResponse.headers.set(
     'Permissions-Policy',
