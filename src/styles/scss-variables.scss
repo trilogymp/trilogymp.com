@@ -1,0 +1,10 @@
+// Try to avoid SCSS variables unless really necessary, prefer CSS variables
+
+// Breakpoints
+// Defined as SCSS variables due to limitations of CSS media queries: can't use
+// CSS variables in media queries
+$breakpoint-sm: 576px; // Mobile
+$breakpoint-md: 768px; // Tablet
+$breakpoint-lg: 992px; // Small desktop
+$breakpoint-xl: 1200px; // Desktop
+$breakpoint-xxl: 1400px; // Large desktop

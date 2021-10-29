@@ -1,0 +1,11 @@
+@import '../styles/mixins/media-queries';
+
+.root {
+  background: rgb(var(--color-cod-gray));
+  color: rgb(var(--color-medium-gray));
+  padding: 1rem 0;
+
+  @include md {
+    padding: 3rem 0;
+  }
+}

@@ -1,0 +1,32 @@
+@import 'mixins/media-queries';
+@import 'variables';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: rgb(var(--color-html-bg));
+}
+
+body {
+  background: rgb(var(--color-body-bg));
+  color: rgb(var(--color-text));
+  font-family: var(--font-family-default);
+  line-height: 1.65;
+  margin: 0;
+
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include md {
+    line-height: 1.75;
+  }
+}
+
+img {
+  user-select: none;
+}

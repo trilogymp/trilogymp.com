@@ -1,0 +1,60 @@
+@import '../styles/mixins/media-queries';
+
+.root {
+  padding: 1rem 0;
+
+  @include md {
+    font-size: 18px;
+    padding: 3rem 0;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 1.3;
+
+    @include md {
+      font-size: 40px;
+    }
+  }
+}
+
+.socials {
+  margin-top: 2rem;
+
+  &__list {
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    display: inline-flex;
+    position: relative;
+    text-decoration: none;
+
+    :first-child::after {
+      background: var(--color-trilogy-gradient);
+      content: '';
+      display: block;
+      height: 42px;
+      left: 50%;
+      mix-blend-mode: multiply;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      transition: opacity 0.5s var(--transition-default);
+      width: 42px;
+    }
+
+    &:hover :first-child::after,
+    &:focus :first-child::after {
+      opacity: 1;
+    }
+  }
+}
+
+.icon-label {
+  composes: screen-reader-text from '../styles/accessibility.scss';
+}

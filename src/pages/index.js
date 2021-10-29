@@ -1,9 +1,19 @@
-import Head from 'next/head';
+import Intro from '@blocks/intro';
+import Disclaimer from '@blocks/disclaimer';
+
+import Title from '@components/title';
+import Description from '@components/description';
 
 export default function Home() {
   return (
-    <Head>
-      <title>Trilogy Multiplayer</title>
-    </Head>
+    <>
+      <Title />
+      <Description />
+
+      <main>
+        <Intro />
+        <Disclaimer />
+      </main>
+    </>
   );
 }

@@ -1,0 +1,61 @@
+// See scss-variables.scss for SCSS variables
+// This file only contains CSS variables
+
+@import 'scss-variables';
+
+:root {
+  // Colors
+  --color-black: 0, 0, 0;
+  --color-cod-gray: 11, 11, 11;
+  --color-medium-gray: 170, 170, 170;
+
+  // Trilogy colors
+  --color-trilogy-gradient: linear-gradient(
+    46.27deg,
+    #a68b57 2.44%,
+    #987b53 13.07%,
+    #e3d7b2 24.59%,
+    #dfd1a1 29.03%,
+    #ddcf9b 32.57%,
+    #ac9468 53.84%,
+    #987c53 63.59%,
+    #baa46d 91.07%
+  );
+
+  // Dark theme context colors
+  --color-html-bg-dark: var(--color-black);
+  --color-body-bg-dark: var(--color-black);
+  --color-text-dark: 255, 255, 255;
+
+  // Fonts
+  --font-family-default: Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  // Breakpoints
+  --breakpoint-sm: #{$breakpoint-sm};
+  --breakpoint-md: #{$breakpoint-md};
+  --breakpoint-lg: #{$breakpoint-lg};
+  --breakpoint-xl: #{$breakpoint-xl};
+  --breakpoint-xxl: #{$breakpoint-xxl};
+
+  // Container
+  --container-max-width: 1440px;
+  --container-padding: 25px;
+
+  // var(--breakpoint-md)
+  @media (min-width: $breakpoint-md) {
+    --container-padding: 40px;
+  }
+
+  // var(--breakpoint-lg)
+  @media (min-width: $breakpoint-lg) {
+    --container-padding: 70px;
+  }
+
+  // Transitions
+  --transition-default: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  // Default theme context colors
+  --color-html-bg: var(--color-html-bg-dark);
+  --color-body-bg: var(--color-body-bg-dark);
+  --color-text: var(--color-text-dark);
+}
