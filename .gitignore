@@ -34,8 +34,7 @@ yarn-error.log*
 .vercel
 
 # workers
-dist
-worker
+/dist/
 
 # eslint
 .eslintcache

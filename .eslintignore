@@ -1,5 +1,7 @@
-.github
-.husky
-.next
-out
-node_modules
+**/.github/
+**/.husky/
+**/.next/
+**/dist/
+**/out/
+**/node_modules/
+**/worker/
