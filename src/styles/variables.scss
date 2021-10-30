@@ -7,7 +7,10 @@
   // Colors
   --color-black: 0, 0, 0;
   --color-cod-gray: 11, 11, 11;
-  --color-medium-gray: 170, 170, 170;
+  --color-emperor: 75, 75, 75;
+  --color-silver-chalice: 170, 170, 170;
+  --color-wild-sand: 244, 244, 244;
+  --color-white: 255, 255, 255;
 
   // Trilogy colors
   --color-trilogy-gradient: linear-gradient(
@@ -25,7 +28,22 @@
   // Dark theme context colors
   --color-html-bg-dark: var(--color-black);
   --color-body-bg-dark: var(--color-black);
-  --color-text-dark: 255, 255, 255;
+  --color-text-dark: var(--color-white);
+  --color-link-dark: var(--color-white);
+
+  // Light theme context colors
+  --color-html-bg-light: var(--color-white);
+  --color-body-bg-light: var(--color-white);
+  --color-text-light: var(--color-black);
+  --color-link-light: var(--color-black);
+
+  // Dark theme schemes
+  --scheme-cod-gray-bg-dark: var(--color-cod-gray);
+  --scheme-cod-gray-text-dark: var(--color-silver-chalice);
+
+  // Light theme schemes
+  --scheme-cod-gray-bg-light: var(--color-wild-sand);
+  --scheme-cod-gray-text-light: var(--color-emperor);
 
   // Fonts
   --font-family-default: Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -58,4 +76,25 @@
   --color-html-bg: var(--color-html-bg-dark);
   --color-body-bg: var(--color-body-bg-dark);
   --color-text: var(--color-text-dark);
+  --color-link: var(--color-link-dark);
+
+  // Default schemes
+  --scheme-cod-gray-bg: var(--scheme-cod-gray-bg-dark);
+  --scheme-cod-gray-text: var(--scheme-cod-gray-text-dark);
+
+  --blend-mode: darken;
+
+  &.theme-light {
+    // Default theme context colors
+    --color-html-bg: var(--color-html-bg-light);
+    --color-body-bg: var(--color-body-bg-light);
+    --color-text: var(--color-text-light);
+    --color-link: var(--color-link-light);
+
+    // Default schemes
+    --scheme-cod-gray-bg: var(--scheme-cod-gray-bg-light);
+    --scheme-cod-gray-text: var(--scheme-cod-gray-text-light);
+
+    --blend-mode: lighten;
+  }
 }

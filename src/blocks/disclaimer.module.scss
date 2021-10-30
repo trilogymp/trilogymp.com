@@ -1,8 +1,7 @@
 @import '../styles/mixins/media-queries';
 
 .root {
-  background: rgb(var(--color-cod-gray));
-  color: rgb(var(--color-medium-gray));
+  composes: cod-gray from '../styles/schemes.scss';
   padding: 1rem 0;
 
   @include md {
