@@ -15,5 +15,8 @@
   "main": "index.js",
   "optionalDependencies": {
     "fsevents": "^2.3.2"
+  },
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.1.3"
   }
 }

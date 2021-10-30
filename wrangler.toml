@@ -6,7 +6,7 @@ workers_dev = true
 zone_id = "cad1b7d6692e05575473df968f1b1280"
 
 [site]
-bucket = "./out"
+bucket = "out"
 entry-point = "src/cfworker"
 
 [env.production]
