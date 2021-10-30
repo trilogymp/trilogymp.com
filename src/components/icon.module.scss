@@ -1,0 +1,28 @@
+.root {
+  display: inline-flex;
+  position: relative;
+
+  &::after {
+    background: var(--color-trilogy-gradient);
+    content: '';
+    display: block;
+    height: 42px;
+    left: 50%;
+    mix-blend-mode: var(--blend-mode);
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    transition: opacity 0.5s var(--transition-default);
+    width: 42px;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+
+  path {
+    fill: currentColor;
+  }
+}

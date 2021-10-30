@@ -1,7 +1,8 @@
 import styles from './intro.module.scss';
 
 import Container from '@components/container';
-import Image from '@components/image';
+
+import { Discord, GitHub, Twitch, Twitter } from '@components/icon';
 
 export default function Intro() {
   return (
@@ -33,13 +34,7 @@ export default function Intro() {
                 rel="noopener"
                 target="_blank"
               >
-                <Image
-                  alt=""
-                  height="64"
-                  priority
-                  src="/icon-twitter.svg"
-                  width="64"
-                />
+                <Twitter />
                 <span className={styles['icon-label']}>Twitter</span>
               </a>
             </li>
@@ -51,13 +46,7 @@ export default function Intro() {
                 rel="noopener"
                 target="_blank"
               >
-                <Image
-                  alt=""
-                  height="64"
-                  priority
-                  src="/icon-github.svg"
-                  width="64"
-                />
+                <GitHub />
                 <span className={styles['icon-label']}>GitHub</span>
               </a>
             </li>
@@ -69,13 +58,7 @@ export default function Intro() {
                 rel="noopener"
                 target="_blank"
               >
-                <Image
-                  alt=""
-                  height="64"
-                  priority
-                  src="/icon-discord.svg"
-                  width="64"
-                />
+                <Discord />
                 <span className={styles['icon-label']}>Discord</span>
               </a>
             </li>
@@ -87,13 +70,7 @@ export default function Intro() {
                 rel="noopener"
                 target="_blank"
               >
-                <Image
-                  alt=""
-                  height="64"
-                  priority
-                  src="/icon-twitch.svg"
-                  width="64"
-                />
+                <Twitch />
                 <span className={styles['icon-label']}>Twitch</span>
               </a>
             </li>
