@@ -30,3 +30,7 @@ body {
 img {
   user-select: none;
 }
+
+a {
+  color: rgb(var(--color-link));
+}
