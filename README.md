@@ -43,6 +43,7 @@ https://trilogymp.com.
   - [Storybook](https://storybook.js.org) for isolated UI development
 - Code tools and utilities
   - [classnames](https://github.com/JedWatson/classnames)
+  - [next-seo](https://github.com/garmeeh/next-seo)
   - [Wrangler](https://developers.cloudflare.com/workers/cli-wrangler) for
     Cloudflare Workers
 - Testing
