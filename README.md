@@ -2,7 +2,7 @@
 
 ![GitHub](https://img.shields.io/github/license/trilogymp/trilogymp.com)
 [![Discord](https://img.shields.io/discord/901115701551570954)](https://discord.com/invite/dVfXRBA2zx)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](.github/CODE_OF_CONDUCT.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://github.com/trilogymp/.github/blob/main/CODE_OF_CONDUCT.md)
 
 **[Trilogy Multiplayer](https://trilogymp.com)** (TMP) is a work in progress
 nonprofit **open source** software project for Rockstar Games' Grand Theft Auto:
@@ -91,7 +91,7 @@ details.
 
 ## Code of Conduct
 
-Our [Code of Conduct](.github/CODE_OF_CONDUCT.md) is adapted from the
+Our [Code of Conduct](https://github.com/trilogymp/.github/blob/main/CODE_OF_CONDUCT.md) is adapted from the
 [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct.html),
 version 2.1.
 
