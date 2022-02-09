@@ -35,6 +35,32 @@ export function GitHub() {
   );
 }
 
+export function OpenCollective() {
+  return (
+    <span className={styles.root}>
+      <svg
+        height="64"
+        width="65"
+        viewBox="0 0 65 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clipRule="evenodd"
+          d="M46.153 22.888A15.927 15.927 0 0 1 49 32c0 3.387-1.052 6.527-2.847 9.113l-4.144-4.145A10.24 10.24 0 0 0 43.286 32c0-1.801-.463-3.495-1.277-4.968l4.144-4.144Z"
+          fill="#fff"
+          fillRule="evenodd"
+        />
+        <path
+          clipRule="evenodd"
+          d="m42.113 18.847-4.145 4.144A10.24 10.24 0 0 0 33 21.714c-5.68 0-10.286 4.605-10.286 10.286 0 5.68 4.605 10.286 10.286 10.286 1.802 0 3.495-.463 4.968-1.277l4.145 4.144A15.927 15.927 0 0 1 33 48c-8.837 0-16-7.163-16-16s7.163-16 16-16c3.386 0 6.526 1.052 9.113 2.847Z"
+          fill="#fff"
+          fillRule="evenodd"
+        />
+      </svg>
+    </span>
+  );
+}
+
 export function Twitch() {
   return (
     <span className={styles.root}>

@@ -2,7 +2,13 @@ import styles from './intro.module.scss';
 
 import Container from '@components/container';
 
-import { Discord, GitHub, Twitch, Twitter } from '@components/icon';
+import {
+  Discord,
+  GitHub,
+  OpenCollective,
+  Twitch,
+  Twitter,
+} from '@components/icon';
 
 export default function Intro() {
   return (
@@ -72,6 +78,18 @@ export default function Intro() {
               >
                 <Twitch />
                 <span className={styles['icon-label']}>Twitch</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                className={styles.socials__link}
+                href="https://opencollective.com/trilogymp"
+                rel="noopener"
+                target="_blank"
+              >
+                <OpenCollective />
+                <span className={styles['icon-label']}>Open Collective</span>
               </a>
             </li>
           </ul>
