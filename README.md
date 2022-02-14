@@ -40,6 +40,8 @@ https://trilogymp.com.
   - [react-i18next](https://react.i18next.com/)
 - Design and development tools
   - [Figma](https://www.figma.com) for UI and UX design
+- Fonts
+  - [Inter](https://github.com/rsms/inter)
 - Code tools and utilities
   - [classnames](https://github.com/JedWatson/classnames)
   - [next-seo](https://github.com/garmeeh/next-seo)
