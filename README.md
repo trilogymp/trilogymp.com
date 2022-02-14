@@ -29,7 +29,6 @@ https://trilogymp.com.
 - Static code analysis
   - [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) with
     [semistandard](https://github.com/standard/semistandard)
-  - Git hooks with [husky](https://typicode.github.io/husky/#/)
   - [stylelint](https://stylelint.io/) with
     [recommended-scss](https://github.com/stylelint-scss/stylelint-config-recommended-scss)
     and
@@ -47,6 +46,7 @@ https://trilogymp.com.
   - [next-seo](https://github.com/garmeeh/next-seo)
   - [Wrangler](https://developers.cloudflare.com/workers/cli-wrangler) for
     Cloudflare Workers
+  - Git hooks with [husky](https://typicode.github.io/husky/#/)
 - Testing
   - [Playwright](https://playwright.dev/) for end-to-end and integration testing
 - Analytics
