@@ -1,40 +1,27 @@
 {
   "name": "@trilogymp/website",
   "version": "0.1.0",
-  "private": true,
+  "description": "Trilogy Multiplayer website project.",
+  "contributors": [
+    "Patrik Juvonen"
+  ],
   "license": "MIT",
+  "private": true,
+  "keywords": [
+    "website"
+  ],
   "homepage": "https://github.com/trilogymp/trilogymp.com",
-  "bugs": "https://github.com/trilogymp/trilogymp.com/issues",
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/trilogymp"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/trilogymp/trilogymp.com.git"
   },
+  "bugs": "https://github.com/trilogymp/trilogymp.com/issues",
   "engines": {
     "node": ">=14"
-  },
-  "scripts": {
-    "build": "next build",
-    "clean": "del-cli ./{dist,out} ./src/cfworker/worker",
-    "cleaninstall": "npm run clean && del-cli \"{node_modules,.eslintcache,.husky,.next}\" && npm install",
-    "dev": "next dev",
-    "export": "next build && next export",
-    "lint:prettierbase": "prettier \"./**/*.js\"",
-    "lint:prettier:fix": "npm run lint:prettierbase -- --write",
-    "lint:prettier:check": "npm run lint:prettierbase -- --debug-check",
-    "lint:eslint": "eslint ./ --cache",
-    "lint:eslint:fix": "npm run lint:eslint -- --fix",
-    "lint:stylelint": "stylelint \"./**/*.{s,}css\"",
-    "lint:stylelint:fix": "npm run lint:stylelint -- --fix",
-    "lint": "npm-run-all lint:prettier:check lint:eslint lint:stylelint",
-    "lintfix": "npm-run-all lint:prettier:fix lint:eslint:fix lint:stylelint:fix",
-    "prepare": "husky install && playwright install",
-    "start": "next start",
-    "test": "playwright test src/tests",
-    "watch": "npm run dev",
-    "workers:publish": "npm-run-all --parallel workers:publish:dev workers:publish:prod",
-    "workers:publish:dev": "wrangler publish",
-    "workers:publish:prod": "wrangler publish --env production",
-    "wrangler": "wrangler"
   },
   "dependencies": {
     "classnames": "^2.3.1",
@@ -42,25 +29,25 @@
     "next-seo": "^5.1.0",
     "postcss": "^8.4.6",
     "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-preset-env": "^7.3.3",
+    "postcss-preset-env": "^7.4.1",
     "postcss-rtlcss": "^3.5.2",
     "prop-types": "^15.8.1",
     "react": "alpha",
     "react-dom": "alpha",
-    "react-i18next": "^11.15.4"
+    "react-i18next": "^11.15.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.2",
+    "@babel/core": "^7.17.5",
     "@babel/eslint-parser": "^7.17.0",
     "@cloudflare/wrangler": "^1.19.8",
-    "@playwright/test": "^1.19.0",
+    "@playwright/test": "^1.19.1",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.6.0",
     "del": "^6.0.0",
     "del-cli": "^4.0.1",
     "eslint": "^7.32.0",
-    "eslint-config-next": "^12.0.10",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-next": "^12.1.0",
+    "eslint-config-prettier": "^8.4.0",
     "eslint-config-semistandard": "^16.0.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.4",
@@ -71,15 +58,38 @@
     "husky": "^7.0.4",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.5.1",
-    "sass": "^1.49.7",
-    "sass-loader": "^12.5.0",
+    "sass": "^1.49.8",
+    "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
-    "stylelint": "^14.5.0",
+    "stylelint": "^14.5.3",
     "stylelint-config-css-modules": "^3.0.0",
     "stylelint-config-recommended-scss": "^5.0.2",
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.1.0",
-    "webpack": "^5.68.0"
+    "webpack": "^5.69.1"
+  },
+  "scripts": {
+    "build": "next build",
+    "clean": "del-cli \"{dist,out}\" ./src/cfworker/worker",
+    "cleaninstall": "npm run clean && del-cli \"{node_modules,.eslintcache,.husky,.next}\" && npm install",
+    "dev": "next dev",
+    "export": "next build && next export",
+    "lint": "npm-run-all --continue-on-error lint:**",
+    "lint:eslint": "eslint ./ --cache",
+    "lint:prettier": "prettier \"./**/*.js\" --debug-check",
+    "lint:stylelint": "stylelint \"./**/*.{s,}css\" --cache",
+    "lintfix": "npm-run-all --continue-on-error lintfix:**",
+    "lintfix:eslint": "eslint \"./**/*.js\" --fix",
+    "lintfix:prettier": "prettier \"./**/*.js\" --write",
+    "lintfix:stylelint": "stylelint \"./**/*.{s,}css\" --fix",
+    "prepare": "husky install && playwright install",
+    "start": "next start",
+    "test": "playwright test src/tests",
+    "watch": "npm run dev",
+    "workers:publish": "npm-run-all --parallel workers:publish:*",
+    "workers:publish:dev": "wrangler publish",
+    "workers:publish:prod": "wrangler publish --env production",
+    "wrangler": "wrangler"
   },
   "optionalDependencies": {
     "fsevents": "^2.3.2"

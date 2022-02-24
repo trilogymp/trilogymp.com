@@ -36,5 +36,6 @@ yarn-error.log*
 # workers
 /dist/
 
-# eslint
+# caches
 .eslintcache
+.stylelintcache
