@@ -92,8 +92,8 @@ details.
 
 ## Code of Conduct
 
-Our [Code of Conduct](https://github.com/trilogymp/.github/blob/main/CODE_OF_CONDUCT.md) is adapted from the
-[Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct.html),
+Our [Code of Conduct](https://github.com/trilogymp/.github/blob/main/CODE_OF_CONDUCT.md)
+is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct.html),
 version 2.1.
 
 By participating in this project you agree to abide by its terms.
