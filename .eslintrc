@@ -1,12 +1,6 @@
 {
   "parser": "@babel/eslint-parser",
-  "extends": [
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "prettier",
-    "semistandard",
-    "next"
-  ],
+  "extends": ["prettier", "standard", "next/core-web-vitals"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -22,6 +16,8 @@
     "node": true
   },
   "rules": {
+    "semi": ["error", "always"],
+    "no-extra-semi": "error",
     "comma-dangle": [1, "only-multiline"],
     "no-warning-comments": [
       "warn",
