@@ -21,7 +21,7 @@ https://trilogymp.com.
     [Cloudflare Workers](https://workers.cloudflare.com/)
 - Gist
   - [Node.js 14](https://nodejs.medium.com/node-js-version-14-available-now-8170d384567e)
-  - [React 18](https://reactjs.org/blog/2021/06/08/the-plan-for-react-18.html)
+  - [React 18](https://reactjs.org/blog/2022/03/29/react-v18.html)
   - [Next.js 12](https://nextjs.org/blog/next-12)
   - CSS modules in [Sass (SCSS)](https://sass-lang.com/)
 - CI/CD
