@@ -3,6 +3,7 @@
   position: relative;
 
   &::after {
+    /*rtl:begin:ignore*/
     background: var(--color-trilogy-gradient);
     content: '';
     display: block;
@@ -15,6 +16,7 @@
     transform: translate3d(-50%, -50%, 0);
     transition: opacity 0.5s var(--transition-default);
     width: 42px;
+    /*rtl:end:ignore*/
   }
 
   &:hover::after,
