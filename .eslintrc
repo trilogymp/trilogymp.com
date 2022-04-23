@@ -1,6 +1,6 @@
 {
   "parser": "@babel/eslint-parser",
-  "extends": ["prettier", "standard", "next/core-web-vitals"],
+  "extends": ["next/core-web-vitals", "standard", "prettier"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
