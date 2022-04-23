@@ -1,4 +1,5 @@
-name: 'Code scanning'
+name: Code scanning
+
 on:
   push:
     branches:
