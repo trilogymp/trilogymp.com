@@ -1,20 +1,5 @@
 {
-  "parser": "@babel/eslint-parser",
   "extends": ["next/core-web-vitals", "standard", "prettier"],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 2018,
-    "sourceType": "module",
-    "babelOptions": {
-      "presets": ["next/babel"]
-    }
-  },
-  "env": {
-    "browser": true,
-    "node": true
-  },
   "rules": {
     "semi": ["error", "always"],
     "no-extra-semi": "error",
@@ -25,15 +10,6 @@
         "terms": ["eslint-disable", "fixme", "hack", "todo"],
         "location": "anywhere"
       }
-    ],
-    "react/jsx-no-target-blank": [0],
-    "react/prop-types": [0],
-    "react/react-in-jsx-scope": [0],
-    "space-before-function-paren": [0]
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
+    ]
   }
 }

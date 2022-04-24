@@ -1,6 +1,6 @@
 import styles from './intro.module.scss';
 
-import Container from '@components/container';
+import Container from '@/components/container';
 
 import {
   Discord,
@@ -8,7 +8,7 @@ import {
   OpenCollective,
   Twitch,
   Twitter,
-} from '@components/icon';
+} from '@/components/icon';
 
 export default function Intro() {
   return (

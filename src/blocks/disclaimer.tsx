@@ -1,6 +1,6 @@
 import styles from './disclaimer.module.scss';
 
-import Container from '@components/container';
+import Container from '@/components/container';
 
 export default function Disclaimer() {
   return (
