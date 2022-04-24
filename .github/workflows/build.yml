@@ -17,7 +17,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: npm
-      - run: npm ci
+      - run: npm install --no-package-lock
       - run: npm run lint
       - run: npm run build
+      - run: npx playwright install --with-deps
       - run: npm test --if-present
