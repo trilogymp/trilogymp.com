@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  compress: false,
   images: {
     loader: 'custom',
   },
