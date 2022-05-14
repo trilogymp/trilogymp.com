@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     loader: 'custom',
   },
+  poweredByHeader: false,
   reactStrictMode: true,
   swcMinify: true,
   async headers() {
