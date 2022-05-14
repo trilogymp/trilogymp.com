@@ -17,8 +17,7 @@ https://trilogymp.com.
 ## Stack
 
 - Hosting
-  - Free CDN hosting from [Cloudflare Pages](https://pages.cloudflare.com/) with
-    [Cloudflare Workers](https://workers.cloudflare.com/)
+  - Free CDN hosting from [Cloudflare Pages](https://pages.cloudflare.com/)
 - Gist
   - [Node.js 14](https://nodejs.medium.com/node-js-version-14-available-now-8170d384567e)
   - [React 18](https://reactjs.org/blog/2022/03/29/react-v18.html)
@@ -44,8 +43,6 @@ https://trilogymp.com.
 - Code tools and utilities
   - [classnames](https://github.com/JedWatson/classnames)
   - [next-seo](https://github.com/garmeeh/next-seo)
-  - [Wrangler](https://developers.cloudflare.com/workers/cli-wrangler) for
-    Cloudflare Workers
   - Git hooks with [husky](https://typicode.github.io/husky/#/)
 - Testing
   - [Playwright](https://playwright.dev/) for end-to-end and integration testing
@@ -70,14 +67,6 @@ Cloudflare Pages GitHub integration will take care of the rest.
 
 Pushing to other branches, including the `main` branch, will result in a preview
 build. A public preview link will be available on Cloudflare Pages dashboard.
-
-## Publishing the worker
-
-To publish a new worker build, use the
-[Wrangler CLI](https://developers.cloudflare.com/workers/cli-wrangler). First
-log in to your authorized Cloudflare account using `npm run wrangler login` and
-then use `npm run workers:publish` to publish the worker in all environments.
-Use `npm run wrangler` to see all available commands.
 
 ## Exporting a static version
 

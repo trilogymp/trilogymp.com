@@ -34,8 +34,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
-# workers
-/dist/
-
 # caches
 .stylelintcache

@@ -38,7 +38,6 @@
     "react-i18next": "^11.16.7"
   },
   "devDependencies": {
-    "@cloudflare/wrangler": "^1.19.12",
     "@playwright/test": "^1.21.1",
     "@types/node": "17.0.25",
     "@types/react": "18.0.6",
@@ -65,7 +64,7 @@
   },
   "scripts": {
     "build": "next build",
-    "clean": "del-cli \"{dist,out}\" ./src/cfworker/worker",
+    "clean": "del-cli \"{dist,out}\"",
     "cleaninstall": "npm run clean && del-cli \"{node_modules,.eslintcache,.husky,.next}\" && npm install",
     "dev": "next dev",
     "export": "next build && next export",
@@ -80,13 +79,6 @@
     "prepare": "husky install && playwright install",
     "start": "next start",
     "test": "playwright test src/tests",
-    "watch": "npm run dev",
-    "workers:publish": "npm-run-all --parallel workers:publish:*",
-    "workers:publish:dev": "wrangler publish",
-    "workers:publish:prod": "wrangler publish --env production",
-    "wrangler": "wrangler"
-  },
-  "optionalDependencies": {
-    "fsevents": "^2.3.2"
+    "watch": "npm run dev"
   }
 }
